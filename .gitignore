@@ -1,0 +1,10 @@
+*.swp
+/.tidyall.d/
+/MANIFEST
+/MANIFEST.bak
+/MYMETA.json
+/MYMETA.yml
+/Makefile
+/Test-IsAny-*
+/blib/
+/pm_to_blib

@@ -9,10 +9,11 @@ my %conf = (
 	ABSTRACT_FROM => 'lib/Test/IsAny.pm',
 	EXE_FILES     => [],
 	PREREQ_PM     => {
-		'Test::Builder' => 1.001,
-		'Carp'          => 0,
-		'Data::Dumper'  => 0,
-		'Exporter'      => 0,
+		'Test::Builder'   => 1.001,
+		'Carp'            => 0,
+		'Data::Dumper'    => 0,
+		'Exporter'        => 0,
+		'List::MoreUtils' => 0,
 	},
 );
 

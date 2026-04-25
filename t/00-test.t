@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::Builder::Tester tests => 3;
+use Test::Builder::Tester tests => 4;
 use Test::IsAny qw(is_any);
 
 test_out('ok 1 - ');
@@ -26,4 +26,17 @@ test_test('is_any failure');
 	is_any( $result, \@expected, 'The right answer' );
 	test_test('is_any success');
 };
+
+{
+	test_out('not ok 1 - The right answer');
+	my $expected_error = q{#   Failed test 'The right answer'
+#   at t/00-test.t line 39.
+# Received: 42
+# Expected:
+#          1
+#          2};
+	test_err($expected_error);
+	is_any( 42, [ 1, 2 ], 'The right answer' );
+	test_test('is_any failure');
+}
 

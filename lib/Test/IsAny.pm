@@ -18,7 +18,7 @@ Test::IsAny - check if a value is any of the given values
 
   my $result = 42; # this is the result of the Application Under Test
   my @expected = (10, 71, 23, 42);
-  is_any($result, \@expected, 'The right anwser');
+  is_any($result, \@expected, 'The right answer');
 
 =head1 DESCRIPTION
 
